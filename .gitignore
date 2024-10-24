@@ -1,4 +1,12 @@
 .deps/*
 .git/*
 .states/*
-contracts/artifacts/*
+*.json
+*.js
+*.yml
+*.png
+*.ts
+yarn.lock
+
+
+
