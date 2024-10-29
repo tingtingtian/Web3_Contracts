@@ -131,7 +131,7 @@ contract DynamicAMM {
     }
 
     // 计算输出金额
-    function calculateAmountOut(uint256 amountIn, uint256 reserveIn, uint256 reserveOut, Model model, uint256 fee) internal view returns (uint256) {
+    function calculateAmountOut(uint256 amountIn, uint256 reserveIn, uint256 reserveOut, Model model, uint256 fee) internal pure returns (uint256) {
         // 扣除手续费
         uint256 amountInWithFee = amountIn.mul(1000 - fee).div(1000);
 
